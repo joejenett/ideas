@@ -1,0 +1,23 @@
+body {
+	padding:100px;
+	font-size:1.5em;
+	line-height:1.4em;
+	width:700px;
+	margin:auto;
+	background:#faffff;
+}
+
+
+
+
+
+
+.artmargins {
+padding:30px 110px;
+}
+
+@media (max-width:767px) {
+	.artmargins {
+		padding:0;
+	}
+}
