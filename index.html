@@ -205,6 +205,8 @@ Error message and password prompt
 
 <li>$:/config/EditorTypeMappings/text/vnd.tiddlywiki</li>
 
+<li>$:/config/KookmaPluginLibrary</li>
+
 <li>$:/config/Navigation/UpdateAddressBar</li>
 
 <li>$:/config/Navigation/UpdateHistory</li>
@@ -328,6 +330,8 @@ Error message and password prompt
 <li>$:/state/folded/the bulltown.2022 webgarden</li>
 
 <li>$:/state/plugin-info-1642318078-$:/plugins/tiddlywiki/twitter-archivist</li>
+
+<li>$:/state/showeditpreview</li>
 
 <li>$:/state/tab--1498284803</li>
 
@@ -456,6 +460,8 @@ Error message and password prompt
 <li>devnotes</li>
 
 <li>distance</li>
+
+<li>Draft of '$:/Import'</li>
 
 <li>enough</li>
 
@@ -779,6 +785,7 @@ Error message and password prompt
 {"title":"$:/config/DefaultMoreSidebarTab","text":"$:/core/ui/MoreSideBar/All","created":"20220814011903105","modified":"20220814011903105"},
 {"title":"$:/config/DefaultSidebarTab","text":"$:/core/ui/SideBar/Open","created":"20220724155240129","modified":"20220813200833649"},
 {"title":"$:/config/EditorTypeMappings/text/vnd.tiddlywiki","text":"comptext","created":"20200510024843460","modified":"20200603121638626","tags":"$:/giffmex/stroll $:/giffmex/blinks"},
+{"title":"$:/config/KookmaPluginLibrary","caption":"Kookma Plugin Library","created":"20200306121057751","modified":"20200323203955814","revision":"0","tags":"$:/tags/PluginLibrary","type":"text/vnd.tiddlywiki","url":"https://kookma.github.io/TW-PluginLibrary/library/index.html","text":"Kookma plugin library is a set of plugins, themes, and scripts, to extend functionality and add new features to Tiddlywiki. For detail information visit the library at [[GitHub|https://github.com/kookma]]. It is recommended to backup your data before installing any plugin, theme, or script. \n\nTo use in other wikis, drag and drop this link to those wikis: [[Kookma Plugin Library|$:/config/KookmaPluginLibrary]]"},
 {"title":"$:/config/Navigation/UpdateAddressBar","text":"no","created":"20220814011715634","modified":"20220814011957859"},
 {"title":"$:/config/Navigation/UpdateHistory","text":"no","created":"20220814011743224","modified":"20220814012001210"},
 {"title":"$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home","type":"text/vnd.tiddlywiki","text":"show","bag":"default","created":"20200513172113768","modified":"20200513172145594","revision":"0"},
@@ -841,6 +848,7 @@ Error message and password prompt
 {"created":"20230126224106627","title":"$:/state/folded/mini gallery","text":"show","modified":"20230126224158607"},
 {"created":"20230126224100057","title":"$:/state/folded/the bulltown.2022 webgarden","text":"show","modified":"20230126224207976"},
 {"created":"20221214104840204","title":"$:/state/plugin-info-1642318078-$:/plugins/tiddlywiki/twitter-archivist","text":"yes","modified":"20221214105202305"},
+{"created":"20230325024231097","title":"$:/state/showeditpreview","text":"yes","modified":"20230325024231097"},
 {"created":"20230324164226384","title":"$:/state/tab--1498284803","text":"$:/core/ui/AdvancedSearch/Filter","modified":"20230325022932872"},
 {"created":"20230126223639389","title":"$:/state/tab--1963855381","text":"$:/core/ui/ControlPanel/StoryView","modified":"20230126223831252"},
 {"created":"20221214104946438","title":"$:/state/tab--86143343","text":"$:/core/ui/ControlPanel/Plugins/Installed/Plugins","modified":"20221214104946438"},
@@ -848,7 +856,7 @@ Error message and password prompt
 {"created":"20221214104611200","title":"$:/state/tab-2065006209","text":"$:/core/ui/ControlPanel/Saving/GitHub","modified":"20230325020032202"},
 {"created":"20230115204027121","title":"$:/state/tab/sidebar--595412856","text":"$:/core/ui/SideBar/Open","modified":"20230115204039840"},
 {"title":"$:/status/RequireReloadDueToPluginChange","text":"no"},
-{"title":"$:/StoryList","created":"20230325023134237","text":"","list":"$:/Import welcome [[on being human]] bull! business browse [[mini gallery]]","modified":"20230325023134237"},
+{"title":"$:/StoryList","created":"20230325024115763","text":"","list":"[[Draft of '$:/Import']] welcome [[on being human]] bull! business browse [[mini gallery]]","modified":"20230325024115763"},
 {"title":"$:/styles","text":"body {\nfont-family:courier, \"courier new\", serif;\n}\n#linkmenu a {\ntext-decoration:none;font-weight:600;color:#334a52;margin:6px;font-family:helvetica,arial,sans-serif;\n}\nheader.krystal-header {\nfont-family:helvetica,arial,sans-serif;\n}\n.tc-popup.tc-preview-tiddler{\n\tmax-width:500px;\n\twidth:100%;\n\tpadding:2em;\n    border:1px solid #ccc;\n    background: #fff;\n    box-shadow:none;\n}\n.tc-popup.tc-preview-tiddler img {\nmax-width:100%;\n}\n.tc-popup.tc-preview-tiddler:after{\ncontent:\"(click on white space to close)\";\nfont-size: .8em;\n\n","created":"20210312003616172","modified":"20220814110041450","tags":"$:/tags/Stylesheet"},
 {"title":"$:/tags/SideBar","text":"","created":"20220814011209988","list":"$:/core/ui/SideBar/Open $:/core/ui/SideBar/Recent $:/core/ui/SideBar/Tools $:/core/ui/SideBar/More","modified":"20220814011431441"},
 {"title":"$:/theme","text":"$:/themes/tiddlywiki/vanilla","created":"20220313124701720","modified":"20220814012228716"},
@@ -905,6 +913,7 @@ Error message and password prompt
 {"title":"DateFormat","type":"text/vnd.tiddlywiki","text":"When used to display date values (with the `format` attribute set to ''date''), the ViewWidget accepts a `template` attribute that allows the format of the date values to be specified. The format string is processed with the following substitutions:\n\n|!Token |!Substituted Value |\n|`DDD` |Day of week in full (eg, \"Monday\") |\n|`ddd` |Short day of week (eg, \"Mon\") |\n|`DD` |Day of month |\n|`0DD` |Adds a leading zero |\n|`DDth` |Adds a suffix |\n|`WW` |ISO-8601 week number of year |\n|`0WW` |Adds a leading zero |\n|`MMM` |Month in full (eg, \"July\") |\n|`mmm` |Short month (eg, \"Jul\") |\n|`MM` |Month number |\n|`0MM` |Adds leading zero |\n|`YYYY` |Full year |\n|`YY` |Two digit year |\n|`wYYYY` |Full year with respect to week number |\n|`aYYYY` |\u003C\u003C.from-version \"5.1.23\">> Full year but negative dates are displayed as positive |\n|`wYY` |Two digit year with respect to week number |\n|`{era:BCE||CE}` |\u003C\u003C.from-version \"5.1.23\">> Displays a different string for years that are negative, zero or positive (see below) |\n|`hh` |Hours |\n|`0hh` |Adds a leading zero |\n|`hh12` |Hours in 12 hour clock |\n|`0hh12` |Hours in 12 hour clock with leading zero |\n|`mm` |Minutes |\n|`0mm` |Minutes with leading zero |\n|`ss` |Seconds |\n|`0ss` |Seconds with leading zero |\n|`XXX` |Milliseconds |\n|`0XXX` |Milliseconds with leading zero |\n|`am` or `pm` |Lower case AM/PM indicator |\n|`AM` or `PM` |Upper case AM/PM indicator |\n|`TZD` |Timezone offset |\n|`\\x` |Used to escape a character that would otherwise have special meaning |\n|`[UTC]`|Time-shift the represented date to UTC. Must be at very start of format string|\n\nNote that other text is passed through unchanged, allowing commas, colons or other separators to be used.\n\nThe `{era:BCE||CE}` notation can specify different strings for years that are negative, zero or positive. For example `{era:BC|Z|AD}` would display `BC` for negative years, `AD` for positive years, and `Z` for year zero.\n\n! Examples\n\n|!Template |!Output |\n|`DDth MMM YYYY` |16th February 2011 |\n|`DDth MMM \\M\\M\\M YYYY` |16th February MMM 2011 |\n|`DDth mmm YYYY 0hh:0mm:0ss` |16th Feb 2011 11:38:42 |\n","created":"20140418142957325","modified":"20201201154521138","tags":"Features"},
 {"title":"devnotes","text":"\u003C\u003Clist-links \"[tag[devnotes]]\">>","created":"20220826140534368","modified":"20220826140609357","tags":"TableOfContents"},
 {"title":"distance","type":"application/x-tiddler","text":"the distance between\u003Cbr />\nlike minds trying to connect\u003Cbr />\nshorter than you think ","created":"20190309110918904","modified":"20190309191153566","tags":"haiku"},
+{"title":"Draft of '$:/Import'","text":"The following tiddlers were imported:\n\n# [[$:/config/KookmaPluginLibrary]]","status":"complete"},
 {"title":"enough","type":"text/vnd.tiddlywiki","text":"finding and sharing\u003Cbr />\nthe thought that someone likes it\u003Cbr />\nis enough for me ","created":"20190311204919665","modified":"20190311205041481","tags":"haiku"},
 {"title":"environs","text":"\u003C\u003Clist-links \"[tag[environs]]\">>","created":"20210213164322498","modified":"20210213164344445","tags":"TableOfContents"},
 {"title":"Example","type":"text/vnd.tiddlywiki","text":"See the reference link below? You can find a reference to this tiddler also in the [[Installation]].","bag":"default","created":"20200513182827588","modified":"20200822125203907","revision":"0"},
