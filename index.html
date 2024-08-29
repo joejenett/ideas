@@ -468,6 +468,8 @@ Error message and password prompt
 
 <li>back in the fall</li>
 
+<li>baggage</li>
+
 <li>barrels</li>
 
 <li>beepers</li>
@@ -636,6 +638,8 @@ Error message and password prompt
 
 <li>miscellany</li>
 
+<li>mistaken</li>
+
 <li>modern retro</li>
 
 <li>moment 10-18-22</li>
@@ -755,6 +759,8 @@ Error message and password prompt
 <li>shitlist</li>
 
 <li>simply...</li>
+
+<li>slow your roll</li>
 
 <li>something said yesterday</li>
 
@@ -943,7 +949,7 @@ Error message and password prompt
 {"title":"$:/core/ui/SideBar/Tools","text":"\\define lingo-base() $:/language/ControlPanel/\n\\define config-title()\n$:/config/PageControlButtons/Visibility/$(listItem)$\n\\end\n\n\u003C\u003Clingo Basics/Version/Prompt>> \u003C\u003Cversion>>\n\n\u003C$set name=\"tv-config-toolbar-icons\" value=\"yes\">\n\n\u003C$set name=\"tv-config-toolbar-text\" value=\"yes\">\n\n\u003C$set name=\"tv-config-toolbar-class\" value=\"\">\n\n\u003C$list filter=\"[all[shadows+tiddlers]tag[$:/tags/PageControls]!has[draft.of]]\" variable=\"listItem\">\n\n\u003Cdiv style=\"position:relative;\" class={{{ [\u003ClistItem>encodeuricomponent[]addprefix[tc-btn-]] }}}>\n\n\u003C$checkbox tiddler=\u003C\u003Cconfig-title>> field=\"text\" checked=\"show\" unchecked=\"hide\" default=\"show\"/> \u003C$transclude tiddler=\u003C\u003ClistItem>>/> \u003Ci class=\"tc-muted\">\u003C$transclude tiddler=\u003C\u003ClistItem>> field=\"description\"/>\u003C/i>\n\n\u003C/div>\n\n\u003C/$list>\n\n\u003C/$set>\n\n\u003C/$set>\n\n\u003C/$set>\n","caption":"{{$:/language/SideBar/Tools/Caption}}","modified":"20220813194539275"},
 {"title":"$:/core/ui/ViewTemplate/body","text":"\u003C$reveal tag=\"div\" class=\"tc-tiddler-body\" type=\"nomatch\" stateTitle=\u003C\u003Cfolded-state>> text=\"hide\" retain=\"yes\" animate=\"yes\">\n\n\u003C$list filter=\"[all[current]!has[plugin-type]!field:hide-body[yes]]\">\n\n\u003C$transclude>\n\n\u003C$transclude tiddler=\"$:/language/MissingTiddler/Hint\"/>\n\n\u003C/$transclude>\n\n\u003C/$list>\n\n\u003C/$reveal>\n\n\u003Cp style=\"line-height:1.2em;font-size:.7em;background:#eee;\">\nCreated \u003C$view field=\"created\" format=\"date\" template=\"ddd DDth mmm YYYY at hh12:0mm am\"/>\u003Cbr />\nModified \u003C$view field=\"modified\" format=\"date\" template=\"ddd DDth mmm YYYY at hh12:0mm am\"/>\n\u003C/p>","created":"20210315145808488","modified":"20210315145821055","tags":"$:/tags/ViewTemplate"},
 {"title":"$:/core/ui/ViewTemplate/subtitle","text":"\\whitespace trim\n\u003C$reveal type=\"nomatch\" stateTitle=\u003C\u003Cfolded-state>> text=\"hide\" tag=\"div\" retain=\"yes\" animate=\"yes\">\n\u003Cdiv class=\"tc-subtitle\">\n\u003C$link to={{!!modifier}} />\nCreated&nbsp;\u003C$view field=\"created\" format=\"date\" template={{$:/language/Tiddler/DateFormat}}/>\n\u003C/div>\n\u003C/$reveal>\n","created":"20210315144849476","modified":"20210315145215533","tags":"$:/tags/ViewTemplate"},
-{"created":"20210203180635034","title":"$:/DefaultTiddlers","type":"text/vnd.tiddlywiki","text":"[[welcome]]\n[[point of view]]\n[[a run for the gold]]\n[[time]]\n[[browse]]","bag":"default","modified":"20240815212925103","revision":"0"},
+{"created":"20210203180635034","title":"$:/DefaultTiddlers","type":"text/vnd.tiddlywiki","text":"[[welcome]]\n[[point of view]]\n[[baggage]]\n[[mistaken]]\n[[browse]]","bag":"default","modified":"20240829112948197","revision":"0"},
 {"created":"20230325020114299","title":"$:/GitHub/Filename","text":"index.html","modified":"20230325020121307"},
 {"created":"20230325020111700","title":"$:/GitHub/Path","text":"/","modified":"20230325020111700"},
 {"created":"20230325020049044","title":"$:/GitHub/Repo","text":"joejenett/ideas","modified":"20230325020055726"},
@@ -999,7 +1005,7 @@ Error message and password prompt
 {"created":"20230115204027121","title":"$:/state/tab/sidebar--595412856","text":"$:/core/ui/SideBar/Open","modified":"20230115204039840"},
 {"created":"20240217194007337","title":"$:/state/toc/TableOfContents-seedlings--1362226922","text":"close","modified":"20240217194030926"},
 {"title":"$:/status/RequireReloadDueToPluginChange","text":"no"},
-{"created":"20240815212915414","title":"$:/StoryList","text":"","list":"$:/ControlPanel [[point of view]] welcome turmoil [[a run for the gold]] time browse","modified":"20240815212915414"},
+{"created":"20240829112936021","title":"$:/StoryList","text":"","list":"$:/ControlPanel baggage welcome [[point of view]] [[slow your roll]] mistaken browse","modified":"20240829112936021"},
 {"title":"$:/styles","text":"body {\nfont-family:courier, \"courier new\", serif;\n}\n#linkmenu a {\ntext-decoration:none;font-weight:600;color:#334a52;margin:6px;font-family:helvetica,arial,sans-serif;\n}\nheader.krystal-header {\nfont-family:helvetica,arial,sans-serif;\n}\n.tc-popup.tc-preview-tiddler{\n\tmax-width:500px;\n\twidth:100%;\n\tpadding:2em;\n    border:1px solid #ccc;\n    background: #fff;\n    box-shadow:none;\n}\n.tc-popup.tc-preview-tiddler img {\nmax-width:100%;\n}\n.tc-popup.tc-preview-tiddler:after{\ncontent:\"(click on white space to close)\";\nfont-size: .8em;\n\n","created":"20210312003616172","modified":"20220814110041450","tags":"$:/tags/Stylesheet"},
 {"title":"$:/tags/SideBar","text":"","created":"20220814011209988","list":"$:/core/ui/SideBar/Open $:/core/ui/SideBar/Recent $:/core/ui/SideBar/Tools $:/core/ui/SideBar/More","modified":"20220814011431441"},
 {"created":"20220313124701720","title":"$:/theme","text":"$:/themes/tiddlywiki/vanilla","modified":"20240219020716644"},
@@ -1036,6 +1042,7 @@ Error message and password prompt
 {"title":"away","text":"\u003Cimg src=\"images/away.jpg\" alt=\"\" />","created":"20211219205720429","modified":"20211219205817994","tags":"photo"},
 {"created":"20231020090004122","text":"Sometimes taken back by the words used...\u003Cp>“for free (a small donation would be nice of you)”\u003C/p>","tags":"seeds $:/tags/Commander/Working","title":"awkward expressions","modified":"20240204223207321"},
 {"title":"back in the fall","type":"application/x-tiddler","text":"\u003C\u003Cibox images/backinthefall.jpg \"back in the fall\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>","created":"20210115205036431","modified":"20210508210044035","tags":"photo processed"},
+{"created":"20240829112348902","text":"I’m a firm believer that the baggage we carry from others in our lives are, with time, replaced by challenges we’ve been inspired to impose on ourselves. Feeling pressure to succeed at being happy is far better than the pressure to live up to someone else’s ideals.","tags":"","title":"baggage","modified":"20240829112452649"},
 {"title":"barrels","text":"\u003Cimg src=\"images/barrels.jpg\" style=\"width:100%\" alt=\"\" />","created":"20190315191858557","modified":"20190315192143937","tags":"photo"},
 {"created":"20100929195728248","text":" \u003Cimg src=\"images/beepers.jpg\" alt=\"\" />","title":"beepers","type":"application/x-tiddler","modified":"20240204221857460","tags":"photo"},
 {"title":"behind this thingy","type":"application/x-tiddler","text":"With this new iteration of my ideabase, I've been using \u003Ca title=\"GitHub - sendwheel/tw-receiver: TiddlyWiki Plugin - save to PHP server\" href=\"https://github.com/sendwheel/tw-receiver\">TW Receiver\u003C/a> &ndash; “A TiddlyWiki plugin used for saving to a PHP based server.” It works great - better than \u003Cdiv class=\"tooltip\">\u003Ca href=\"#04-21-19 Notes\">Timini.\u003C/a>\u003Csmall> ([[04-21-19 Notes]])\u003C/small>\u003Cdiv class=\"tooltiptext\">\u003C$transclude tiddler=\"04-21-19 Notes\" mode=\"block\"/>\u003C/div>\u003C/div> 😎","created":"20201109110120991","modified":"20201112195431636","tags":""},
@@ -1120,6 +1127,7 @@ Error message and password prompt
 {"created":"20230530153059572","text":"\u003C\u003Clist-links \"[tag[micro]]\">>","tags":"TableOfContents","title":"micro","modified":"20230530153152971"},
 {"title":"mini gallery","text":"\u003C\u003Cibox images/barrels.jpg \"barrels\" btn-class:\"ibox-btn tc-btn-invisible pretty\">> \u003C\u003Cibox images/beepers.jpg \"beepers\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\u003C\u003Cibox images/curios.jpg \"curios\" btn-class:\"ibox-btn tc-btn-invisible pretty\">> \u003C\u003Cibox images/modern-retro.jpg \"modern retro\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/mysterious.jpg \"mysterious\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/backinthefall.jpg \"out in back\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/postcard-from-pontiac.jpg \"postcard from pontiac\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/rights.jpg \"rights\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/springs.jpg \"springs\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/walls_are_tasty_2.jpg \"walls are tasty (2)\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/mobile.jpg \"chimes\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/colorplay-out-back.jpg \"colorplay out back\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/walls_are_tasty_3.jpg \"walls are tasty (3)\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/lamppost.jpg \"lamp post\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/in_my_space.jpg \"in my space\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>\n\u003C\u003Cibox images/thebluegreen.jpg \"the bluegreen\" btn-class:\"ibox-btn tc-btn-invisible pretty\">>","created":"20210508212857469","modified":"20210508214227893","tags":"photo"},
 {"title":"miscellany","text":"\u003C\u003Clist-links \"[tag[miscellany]]\">>","created":"20210213162328421","modified":"20210213162405935","tags":"TableOfContents"},
+{"created":"20240817194434746","text":"It’s always possible to be mistaken.","tags":"seeds","title":"mistaken","modified":"20240817194515355"},
 {"title":"modern retro","type":"application/x-tiddler","text":"\u003Cimg src=\"images/modern-retro.jpg\" alt=\"\" style=\"width:100%\" />","created":"20190327111957020","modified":"20190327112422941","tags":"photo"},
 {"title":"moment 10-18-22","text":"the fragility that comes with age\u003Cbr />\ninevitable\u003Cbr />\nthe power of the mind\u003Cbr />\nmiraculous","created":"20221018121312650","modified":"20221022122521264","tags":"kernel"},
 {"title":"moment 11-05-22","text":"Every day, there's something new to discover.","created":"20221105103906773","modified":"20221105104042696","tags":"kernel"},
@@ -1180,6 +1188,7 @@ Error message and password prompt
 {"title":"shine","text":"bowie reminded\u003Cbr />\nof time, our days are numbered\u003Cbr />\nnow is time to shine","created":"20220827123319825","modified":"20220827123731895","tags":"haiku"},
 {"created":"20240120232449207","text":"I got one. Google’s on it and so is Sony.","title":"shitlist","modified":"20240120232528581"},
 {"created":"20210822155652356","text":"\u003Ca href=\"https://fontmeme.com/straight-outta/\">\u003Cimg src=\"images/thiswiki.png\" alt=\"\" />\u003C/a>\n\nThanks \u003Ca href=\"https://pinboard.in/u:tellio\" title=\"\">tellio\u003C/a>!","title":"simply...","modified":"20240204221857463"},
+{"created":"20240817194520993","text":"Sometimes you have to slow your roll enough to feel the moment.","tags":"seeds","title":"slow your roll","modified":"20240817194628624"},
 {"created":"20201110142446872","text":"\u003Ca href=\"https://simply.joejenett.com/poor-winner-poor-loser/\" title=\"\">Every American who voted in the recent election is a patriot...\u003C/a> 🔗","title":"something said yesterday","modified":"20240205120908292","tags":"written"},
 {"created":"20121223172752202","text":"\u003Ca href=\"https://simply.joejenett.com/soul/\" title=\"\">\u003Cimg src=\"https://simply.joejenett.com/images/soul.jpg\" alt=\"\" />\u003C/a>","title":"soul","type":"application/x-tiddler","modified":"20240205120802458","tags":""},
 {"created":"20230617124221433","text":"\u003C\u003Clist-links \"[tag[sparks]]\">>","tags":"TableOfContents","title":"sparks","modified":"20230617124254274"},
